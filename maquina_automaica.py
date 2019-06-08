@@ -14,3 +14,12 @@ class Maquina_Vendas():
 
         
         
+
+class Produto():
+    def __init__(self):
+        print('criei um frango assado')
+        self.name_produto = "frango assado"
+    def nome_produto(self):
+        return self.name_produto
+
+
