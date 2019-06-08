@@ -8,8 +8,9 @@ class Maquina_Vendas():
         self.list_produtos.append(produto)
 
     def comprar_produtos(self):
-        print(self.list_prutos[len(self.list_produtos)-1].nome_produto())
-        del[len(self.list_produtos)-1]
+        print("comprei um " +
+              self.list_produtos[len(self.list_produtos)-1].nome_produto())
+        del self.list_produtos[len(self.list_produtos)-1]
 
 
         
@@ -21,5 +22,20 @@ class Produto():
         self.name_produto = "frango assado"
     def nome_produto(self):
         return self.name_produto
+
+maquina = Maquina_Vendas()
+
+
+p1 = Produto()
+p2 = Produto()
+
+
+
+maquina.reabastecer_maquina(p1)
+maquina.reabastecer_maquina(p2)
+
+maquina.comprar_produtos()
+
+
 
 
